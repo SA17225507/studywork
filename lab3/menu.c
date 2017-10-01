@@ -30,4 +30,19 @@ int main()
 	    continue;
 	}
 	printf("%s - %s\n",p->cmd, p->desc);
-	if(p->handle != 
+	if(p->handler != NULL)
+	{
+	     p->handler();
+	}
+    }
+}
+
+int cmdHelp()
+{
+    showAllCmd(head);
+    return 0;
+}
+int Quit()
+{
+    exit(0);
+} 
