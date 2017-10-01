@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<linklist.h>
+#include"linklist.h"
 
 tDataNode *FindCmd(tDataNode *head,char *cmd)
 {
@@ -11,7 +11,7 @@ tDataNode *FindCmd(tDataNode *head,char *cmd)
     tDataNode *p = head;
     while(p != NULL)
     {
-	if(!strcmp(p->cmd,cmd)
+	if(!strcmp(p->cmd,cmd))
 	{
 	    return p;
 	}
@@ -27,6 +27,7 @@ int showAllCmd(tDataNode *head)
     while(p != NULL)
     {
 	printf("%s\t - %s\n", p->cmd, p->desc);
+        p = p->next;
     }
     return 0;
 }

@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<linklist.h>
+#include"linklist.h"
 
 int cmdHelp();
 int Quit();
@@ -12,18 +12,18 @@ int Quit();
 static tDataNode head[] = 
 {
     {"help","this is help cmd!", cmdHelp, &head[1]},
-    {"version","menu program v1.0", NULL, &hesd[2]},
+    {"version","menu program v1.0", NULL, &head[2]},
     {"quit","Quit from menu", Quit, NULL},
-}
+};
 
 int main()
 {
     while(1)
     {
         char cmd[CMD_MAX_LEN];
-	printf("Input a cmd number->");
+	printf("Input a command:->");
 	scanf("%s", cmd);
-	tDataNode *p = FindCommand(head,cmd);
+	tDataNode *p = FindCmd(head,cmd);
 	if(p == NULL)
 	{
 	    printf("This is a wrong cmd\n");
