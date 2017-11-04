@@ -1,25 +1,3 @@
-
-/**************************************************************************************************/
-/* Copyright (C) mc2lab.com, SSE@USTC, 2014-2015                                                  */
-/*                                                                                                */
-/*  FILE NAME             :  menu.c                                                               */
-/*  PRINCIPAL AUTHOR      :  sudanyuan                                                            */
-/*  SUBSYSTEM NAME        :  menu                                                                 */
-/*  MODULE NAME           :  menu                                                                 */
-/*  LANGUAGE              :  C                                                                    */
-/*  TARGET ENVIRONMENT    :  ANY                                                                  */
-/*  DATE OF FIRST RELEASE :  2017/10/19                                                           */
-/*  DESCRIPTION           :  This is a menu program                                               */
-/**************************************************************************************************/
-
-/*
- * Revision log:
- *
- * Created by sudanyuan,2017/10/19
- *
- */
-
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -33,8 +11,6 @@
 
 tLinkTable * head = NULL;
 void Help(int argc, char *argv[]);
-
-/* data struct and its operations */
 
 typedef struct DataNode
 {

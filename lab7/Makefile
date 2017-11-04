@@ -1,7 +1,3 @@
-#
-# Makefile for Menu Program
-#
-
 CC_PTHREAD_FLAGS      = -lpthread
 CC_FLAGS              = -c
 CC_OUTPUT_FLAGS       = -o

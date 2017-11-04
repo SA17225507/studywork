@@ -1,25 +1,3 @@
-
-/********************************************************************/
-/* Copyright (C) SSE-USTC, 2017-2018                                */
-/*                                                                  */
-/*  FILE NAME             :  linktabe.c                             */
-/*  PRINCIPAL AUTHOR      :  sudanyuan                              */
-/*  SUBSYSTEM NAME        :  LinkTable                              */
-/*  MODULE NAME           :  LinkTable                              */
-/*  LANGUAGE              :  C                                      */
-/*  TARGET ENVIRONMENT    :  ANY                                    */
-/*  DATE OF FIRST RELEASE :  2017/10/19                             */
-/*  DESCRIPTION           :  interface of Link Table                */
-/********************************************************************/
-
-/*
- * Revision log:
- *
- * Created by sudanyuan,2017/10/19
- * Provide right Callback interface by sudanyuan,2017/10/19
- *
- */
-
 #include<stdio.h>
 #include<stdlib.h>
 
